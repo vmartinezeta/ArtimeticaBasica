@@ -1,3 +1,5 @@
+// Autor: Víctor Martínez
+
 export default class Divisibilidad {
     constructor() {
         this.args = undefined

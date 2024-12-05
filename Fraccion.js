@@ -1,8 +1,9 @@
+// Autor: Víctor Martínez
 import Divisibilidad from "./Divisibilidad.js"
 import { Signo } from "./Signo.js"
 
 export default class Fraccion {
-    constructor(signo = Signo.MAS, numerador, denominador) {
+    constructor(signo = Signo.MAS, numerador, denominador=1) {
         this.signo = signo
         this.numerador = numerador
         this.denominador = denominador
