@@ -3,7 +3,6 @@ import Fraccion from "./Fraccion.js"
 import { Signo } from "./Signo.js"
 
 function sumar(...fracciones) {
-
     return homogenizar(...fracciones).reduce((final, fraccion) => {
         if (final === null) {
             return new Fraccion(fraccion.signo, Signo.toInt(fraccion.signo) * fraccion.numerador, fraccion.denominador)
@@ -26,5 +25,6 @@ function homogenizar(...fracciones) {
     })
 }
 
+// codigo boilerplate
 const resultado = sumar(new Fraccion(Signo.MAS, 1, 3), new Fraccion("+", 4, 5), new Fraccion("-", 3, 10))
 console.log(resultado.toString(), " = ", resultado.reducir().toString(), " = ", resultado.toDecimal())
